@@ -1,10 +1,22 @@
 <template>
-  <div></div>
+  <div>
+    <div class="flex flex-col items-center w-screen">
+      <h1 class="font-bold text-3xl">Explore GitLab</h1>
+      <p>
+        Discover projects,groups and snippets. Share your projects with others
+      </p>
+    </div>
+    <AllProjects />
+  </div>
 </template>
 
 <script>
+import AllProjects from "./AllProjects.vue";
 export default {
   name: "HelloWorld",
+  components: {
+    AllProjects,
+  },
 };
 </script>
 
