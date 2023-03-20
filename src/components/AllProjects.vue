@@ -6,7 +6,12 @@
       class="flex justify-around mt-10"
     >
       <div class="flex items-center gap-4">
-        <p class="bg-gray-200 w-5">{{}}</p>
+        <div class="flex justify-center bg-gray-200 w-10 rounded-lg text-lg">
+          <p class="">
+            {{ project.name.split("")[0].toUpperCase() }}
+          </p>
+        </div>
+
         <p>{{ project.name }} / {{ project.path_with_namespace }}</p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -63,6 +68,9 @@ export default {
   computed: {
     ...mapActions(["getText"]),
     ...mapGetters(["text"]),
+    loadNow() {
+      return this.getText;
+    },
   },
   methods: {
     async nati() {
