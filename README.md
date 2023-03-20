@@ -1,24 +1,250 @@
-# vue-backto-basics
+<!-- TABLE OF CONTENTS -->
 
-## Project setup
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+    <!-- - [Run tests](#run-tests) -->
+    <!-- - [Deployment](#triangular_flag_on_post-deployment) -->
+- [👥 Authors](#authors)
+  <!-- - [🔭 Future Features](#future-features) -->
+  <!-- - [🤝 Contributing](#contributing) -->
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+  <!-- - [❓ FAQ (OPTIONAL)](#faq) -->
+  <!-- - [📝 License](#license) -->
+
+<!-- PROJECT DESCRIPTION -->
+
+# 📖 GitLab Projects Page <a name="about-project"></a>
+
+**GitLab Projects {age** is a single page done for the purpose of a test.
+
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+> Describe the tech stack and include only the relevant sections that apply to your project.
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://vuejs.org/">Vue.js</a></li>
+  </ul>
+  <ul>
+    <li><a href="https://tailwindcss.org/">Tailwindcss</a></li>
+  </ul>
+</details>
+
+<!-- <details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://expressjs.com/">Express.js</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
+</details> -->
+
+<!-- Features -->
+
+<!-- ### Key Features <a name="key-features"></a>
+
+> Describe between 1-3 key features of the application.
+
+- **[key_feature_1]**
+- **[key_feature_2]**
+- **[key_feature_3]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+
+<!-- LIVE DEMO -->
+
+<!-- ## 🚀 Live Demo <a name="live-demo"></a>
+
+> Add a link to your deployed project.
+
+- [Live Demo Link](https://google.com) -->
+
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
 ```
-npm install
+ you need to have npm on your device
+
 ```
 
-### Compiles and hot-reloads for development
+### Setup
+
+Clone this repository to your desired folder:
+
+<!--
+Example commands:
+
+```sh
+  cd my-folder
+  git clone git@github.com:myaccount/my-project.git
 ```
-npm run serve
+--->
+
+### Install
+
+Install this project with:
+
+```
+ npm install
+
 ```
 
-### Compiles and minifies for production
+<!--
+Example command:
+
+```sh
+  cd my-project
+  gem install
 ```
-npm run build
+--->
+
+### Usage
+
+To run the project, execute the following command:
+
+```
+ npm run serve
+
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+<!--
+Example command:
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```sh
+  rails server
+```
+--->
+<!--
+### Run tests
+
+To run tests, run the following command: -->
+
+<!--
+Example command:
+
+```sh
+  bin/rails test test/models/article_test.rb
+```
+--->
+
+<!-- ### Deployment
+
+You can deploy this project using: -->
+
+<!--
+Example:
+
+```sh
+
+```
+ -->
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Author <a name="authors"></a>
+
+👤 **Natnael Demelash**
+
+- GitHub: [@githubhandle](https://github.com/NatiDeme)
+- Twitter: [@twitterhandle](https://twitter.com/NatiDeme)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/natnael-demeleash)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+<!-- ## 🔭 Future Features <a name="future-features"></a>
+
+> Describe 1 - 3 features you will add to the project.
+
+- [ ] **[new_feature_1]**
+- [ ] **[new_feature_2]**
+- [ ] **[new_feature_3]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+> Write a message to encourage readers to support your project
+
+If you like this project...
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank Silas Getachew for giving me the chance to showcase my skills and for the support he has shown on this sample project.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+<!-- ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+
+> Add at least 2 questions new developers would ask when they decide to use your project.
+
+- **[Question_1]**
+
+  - [Answer_1]
+
+- **[Question_2]**
+
+  - [Answer_2]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+
+<!-- LICENSE -->
+<!--
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed. -->
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Here is an answer for the previous question:
+
+- Even if middleware is more like a glue or a plumbing factor while having projects that involve middleware, overlap could happen while dealing with such project. The way I would say to deal with such projects is to implement a certain type of standard communication pipeline while accessing both the middle ware and backend. Some project might require for us to wait on certain status we expect before moving on the next communication, even though such matters depend on the project type and scale the communication pipline can be a great solution for us on deciding sync or async approach as well.
