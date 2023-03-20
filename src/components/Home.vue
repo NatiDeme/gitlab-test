@@ -8,7 +8,7 @@
     </div>
     <TableHeadline
       :selected="selected"
-      :tabs="['All', 'Most starred', 'Trending']"
+      :tabs="['All', 'Most recent', 'Public']"
       @selected="setSelected"
       class="mt-10"
     >
@@ -17,12 +17,12 @@
         <!-- <p>yes yes</p> -->
       </Tab>
 
-      <Tab :isSelected="selected === 'Most starred'">
+      <Tab :isSelected="selected === 'Most recent'">
         <AllProjects :projects="getRecentProjects" />
       </Tab>
 
-      <Tab :isSelected="selected === 'Trending'">
-        <!-- <AllProjects :projects="getAllProjects" /> -->
+      <Tab :isSelected="selected === 'Public'">
+        <AllProjects :projects="getPublicProjects" />
       </Tab>
     </TableHeadline>
     <AllProjects class="mt-4" />
@@ -48,15 +48,20 @@ export default {
     };
   },
   computed: {
-    ...mapGetters(["getAllProjects", "getRecentProjects"]),
+    ...mapGetters(["getAllProjects", "getRecentProjects", "getPublicProjects"]),
   },
   mounted() {
     this.fetchAllProjects();
     this.fetchMostRecent();
+    this.fetchPublicProjects();
   },
 
   methods: {
-    ...mapActions(["fetchAllProjects", "fetchMostRecent"]),
+    ...mapActions([
+      "fetchAllProjects",
+      "fetchMostRecent",
+      "fetchPublicProjects",
+    ]),
     setSelected(tab) {
       this.selected = tab;
     },

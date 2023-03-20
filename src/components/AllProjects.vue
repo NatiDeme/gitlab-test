@@ -3,7 +3,7 @@
     <div
       v-for="project in projects"
       :key="project.id"
-      class="lg:grid grid-cols-12 px-4 mt-10 border-b border-gray-300 pb-3"
+      class="lg:grid grid-cols-12 px-4 mt-10 border-b border-gray-300 pb-3 lg:mx-20 mx-1"
     >
       <div class="flex gap-3 items-center text-sm shrink-0 col-span-6">
         <div class="flex justify-center bg-gray-200 rounded-lg text-lg p-4">
