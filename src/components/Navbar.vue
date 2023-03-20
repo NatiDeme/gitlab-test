@@ -1,50 +1,33 @@
 <template>
-  <div class="bg-[#292961] h-16 flex items-center justify-between">
-    <div class="flex gap-5">
-      <p class="text-white">Logo</p>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="w-5 h-5 text-white"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-        />
-      </svg>
-
+  <div class="bg-[#292961] h-12 flex items-center justify-between w-screen">
+    <div
+      class="flex gap-5 items-center justify-between lg:justify-start w-full mr-2"
+    >
+      <img src="../assets/gitlab-logo-500.png" alt="main-logo" class="h-14" />
+      <div class="flex items-center gap-3">
+        <span class="text-white lg:hidden">Menue</span>
+        <HamBurger />
+      </div>
       <input
         type="text"
-        class="bg-white bg-opacity-40 h-8"
+        class="bg-white bg-opacity-40 h-8 rounded-md border-2 border-gray-50 pl-2 hidden lg:block"
         placeholder="Search GitLab"
       />
     </div>
-    <div class="mr-10">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="w-5 h-5 text-white"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-        />
-      </svg>
-    </div>
+    <NavDesktopIcons />
   </div>
 </template>
 
 <script>
+import HamBurger from "@/assets/HamBurger.vue";
+import NavDesktopIcons from "./NavDesktopIcons.vue";
+
 export default {
   name: "NavBar",
+  components: {
+    HamBurger,
+    NavDesktopIcons,
+  },
 };
 </script>
 

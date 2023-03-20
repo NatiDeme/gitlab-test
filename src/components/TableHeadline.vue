@@ -9,7 +9,7 @@
         </ul>
       </div>
 
-      <div class="flex gap-5">
+      <div class="lg:flex gap-5 hidden">
         <input type="text" placeholder="Filter by Name" />
         <input type="text" name="" id="" placeholder="Language" />
         <input type="text" name="" id="" placeholder="Updated Date" />

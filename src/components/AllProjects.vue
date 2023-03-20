@@ -28,7 +28,7 @@
           />
         </svg>
       </div>
-      <div class="flex items-center gap-2">
+      <div class="lg:flex items-center gap-2">
         <StarSVG />
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@
           />
         </svg>
       </div>
-      <div>
+      <div class="hidden lg:block">
         <p class="text-gray-500">updated now</p>
       </div>
     </div>
