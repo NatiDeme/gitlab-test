@@ -3,7 +3,11 @@
     <div
       class="flex gap-5 items-center justify-between lg:justify-start w-full mr-2"
     >
-      <img src="../assets/gitlab-logo-500.png" alt="main-logo" class="h-14" />
+      <img
+        src="../assets/images/gitlab-logo-500.png"
+        alt="main-logo"
+        class="h-14"
+      />
       <div class="flex items-center gap-3">
         <span class="text-white lg:hidden">Menue</span>
         <HamBurger />
@@ -19,7 +23,7 @@
 </template>
 
 <script>
-import HamBurger from "@/assets/HamBurger.vue";
+import HamBurger from "@/assets/icons/HamBurger.vue";
 import NavDesktopIcons from "./NavDesktopIcons.vue";
 
 export default {

@@ -54,7 +54,7 @@
 </template>
 
 <script>
-import StarSVG from "@/assets/StarSVG.vue";
+import StarSVG from "@/assets/icons/StarSVG.vue";
 import { mapActions, mapGetters } from "vuex";
 export default {
   components: {

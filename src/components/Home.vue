@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="flex flex-col items-center w-screen mt-10">
+    <div class="flex flex-col lg:items-center w-screen mt-10 ml-5">
       <h1 class="font-bold text-3xl">Explore GitLab</h1>
-      <p>
+      <p class="hidden lg:block">
         Discover projects,groups and snippets. Share your projects with others
       </p>
     </div>
-    <TableHeadline class="mt-14" />
+    <TableHeadline class="mt-6" />
     <AllProjects />
   </div>
 </template>
