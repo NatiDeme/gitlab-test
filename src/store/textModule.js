@@ -3,9 +3,12 @@ let url =
   "https://gitlab.com/api/v4/projects?access_token=glpat-fD1Q6CFWE5FBYugWD5Jh";
 const actions = {
   async getText({ commit }) {
+    console.log("its called");
     const result = await axios.get(url);
-    console.log(result.data);
+    // console.log(result.data);
+
     commit("SET_TEXT", result.data);
+    return result.data;
   },
 };
 const state = {
