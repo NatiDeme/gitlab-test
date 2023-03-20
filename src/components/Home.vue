@@ -6,7 +6,12 @@
         Discover projects,groups and snippets. Share your projects with others
       </p>
     </div>
-    <TableHeadline class="mt-10" />
+    <TableHeadline
+      :selected="selected"
+      :tabs="['All', 'Most starred', 'Trending']"
+      @selected="setSelected"
+      class="mt-10"
+    />
     <AllProjects class="mt-4" />
   </div>
 </template>
@@ -19,6 +24,16 @@ export default {
   components: {
     TableHeadline,
     AllProjects,
+  },
+  data() {
+    return {
+      selected: "All",
+    };
+  },
+  methods: {
+    setSelected(tab) {
+      this.selected = tab;
+    },
   },
 };
 </script>
