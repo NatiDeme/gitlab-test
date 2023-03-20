@@ -1,31 +1,7 @@
 <template>
   <div>
-    <div class="flex flex-col gap-3 lg:hidden px-5">
-      <input
-        type="text"
-        placeholder="Filter by Name"
-        class="border border-black h-9 rounded-[0.25rem] pl-1"
-      />
-      <select
-        type="text"
-        name="Language"
-        id=""
-        placeholder="Language"
-        class="bg-transparent border border-black h-9 rounded-[0.25rem]"
-      >
-        <option value="Language">Language</option>
-      </select>
-      <select
-        type="text"
-        name="Language"
-        id=""
-        placeholder="Language"
-        class="bg-transparent border border-black h-9 rounded-[0.25rem]"
-      >
-        <option value="Language">Updated Date</option>
-      </select>
-    </div>
-    <div class="flex lg:justify-around justify-start pl-8 mb-3">
+    <TableInputsTop />
+    <div class="flex lg:justify-around justify-start pl-6 mb-3 mt-6">
       <div class="">
         <ul class="flex gap-4">
           <li>All</li>
@@ -34,19 +10,19 @@
         </ul>
       </div>
 
-      <div class="lg:flex gap-5 hidden">
-        <input type="text" placeholder="Filter by Name" />
-        <input type="text" name="" id="" placeholder="Language" />
-        <input type="text" name="" id="" placeholder="Updated Date" />
-      </div>
+      <TableInputsBot />
     </div>
-    <hr class="mx-5" />
+    <hr class="mx-5 lg:mx-52" />
   </div>
 </template>
 
 <script>
+import TableInputsTop from "./TableInputs/TableInputsTop.vue";
+import TableInputsBot from "./TableInputs/TableInputsBot.vue";
+
 export default {
   name: "HelloWorld",
+  components: { TableInputsTop, TableInputsBot },
 };
 </script>
 
