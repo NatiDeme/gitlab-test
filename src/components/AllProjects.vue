@@ -38,17 +38,24 @@
     <div>
       <p class="text-gray-500">updated now</p>
     </div>
+    <button type="button" @click="nati">asdasd</button>
   </div>
 </template>
 
 <script>
 import StarSVG from "@/assets/StarSVG.vue";
+import { mapActions, mapGetters } from "vuex";
 export default {
   components: {
     StarSVG,
   },
+
+  methods: {
+    ...mapActions(["getText"]),
+    ...mapGetters(["text"]),
+    nati() {
+      console.log(this.text);
+    },
+  },
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>

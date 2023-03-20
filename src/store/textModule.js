@@ -1,9 +1,10 @@
 import axios from "axios";
-
+let url =
+  "https://gitlab.com/api/v4/projects?access_token=glpat-fD1Q6CFWE5FBYugWD5Jh";
 const actions = {
-  async getText({ commit }, value) {
-    // console.log(value);
-    const result = await axios.get(`https://bible-api.com/${value}`);
+  async getText({ commit }) {
+    const result = await axios.get(url);
+    console.log(result.data);
     commit("SET_TEXT", result.data);
   },
 };

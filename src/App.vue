@@ -1,5 +1,5 @@
 <template>
-  <main class="flex">
+  <main class="">
     <NavBar />
     <Home msg="Nav bar" />
     <div class="flex justify-center w-full"></div>
