@@ -24,9 +24,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 QR Code Component <a name="about-project"></a>
+# 📖 GitLab Projects Page <a name="about-project"></a>
 
-**QR code component** is a a static component to show a QR code card component.
+**GitLab Projects {age** is a single page done for the purpose of a test.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -38,6 +38,9 @@
   <summary>Client</summary>
   <ul>
     <li><a href="https://vuejs.org/">Vue.js</a></li>
+  </ul>
+  <ul>
+    <li><a href="https://tailwindcss.org/">Tailwindcss</a></li>
   </ul>
 </details>
 
@@ -69,19 +72,17 @@
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+<!-- ## 🚀 Live Demo <a name="live-demo"></a>
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://google.com)
+- [Live Demo Link](https://google.com) -->
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -91,6 +92,7 @@ In order to run this project you need:
 
 ```
  you need to have npm on your device
+
 ```
 
 ### Setup
@@ -110,7 +112,10 @@ Example commands:
 
 Install this project with:
 
-npm install
+```
+ npm install
+
+```
 
 <!--
 Example command:
@@ -124,6 +129,11 @@ Example command:
 ### Usage
 
 To run the project, execute the following command:
+
+```
+ npm run serve
+
+```
 
 <!--
 Example command:
@@ -207,7 +217,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Frontend Mentor for the design.
+I would like to thank Silas Getachew for giving me the chance to showcase my skills and for the support he has shown on this sample project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -234,3 +244,7 @@ I would like to thank Frontend Mentor for the design.
 This project is [MIT](./LICENSE) licensed. -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Here is an answer for the previous question:
+
+- Even if middleware is more like a glue or a plumbing factor while having projects that involve middleware, overlap could happen while dealing with such project. The way I would say to deal with such projects is to implement a certain type of standard communication pipeline while accessing both the middle ware and backend. Some project might require for us to wait on certain status we expect before moving on the next communication, even though such matters depend on the project type and scale the communication pipline can be a great solution for us on deciding sync or async approach as well.
