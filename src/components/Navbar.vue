@@ -1,7 +1,7 @@
 <template>
   <div class="bg-[#292961] h-12 flex items-center justify-between w-screen">
     <div
-      class="flex gap-5 items-center justify-between lg:justify-start w-full mr-2"
+      class="flex gap-5 items-center justify-between lg:justify-start w-full pr-2"
     >
       <img
         src="../assets/images/gitlab-logo-500.png"

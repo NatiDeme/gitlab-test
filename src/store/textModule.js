@@ -2,26 +2,22 @@ import axios from "axios";
 let url =
   "https://gitlab.com/api/v4/projects?access_token=glpat-fD1Q6CFWE5FBYugWD5Jh";
 const actions = {
-  async getText({ commit }) {
-    console.log("its called");
+  async fetchAllProjects({ commit }) {
     const result = await axios.get(url);
-    // console.log(result.data);
-
-    commit("SET_TEXT", result.data);
-    return result.data;
+    commit("SET_ALL_PROJECTS", result.data);
   },
 };
 const state = {
-  text: [],
+  allProjects: [],
 };
 const mutations = {
-  SET_TEXT(state, value) {
-    state.text = value;
+  SET_ALL_PROJECTS(state, value) {
+    state.allProjects = value;
   },
 };
 const getters = {
-  text(state) {
-    return state.text;
+  getAllProjects(state) {
+    return state.allProjects;
   },
 };
 
