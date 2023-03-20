@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      v-for="project in getAllProjects"
+      v-for="project in projects"
       :key="project.id"
       class="lg:grid grid-cols-12 px-4 mt-10 border-b border-gray-300 pb-3"
     >
@@ -22,7 +22,6 @@
           <StarSVG />
           {{ project.star_count }}
         </span>
-        <StarSVG />
         <ShareSVG />
       </div>
       <div class="hidden lg:block col-span-3">
@@ -36,7 +35,6 @@
 import GlobSVG from "@/assets/icons/GlobSVG.vue";
 import StarSVG from "@/assets/icons/StarSVG.vue";
 import ShareSVG from "@/assets/icons/ShareSVG.vue";
-import { mapActions, mapGetters } from "vuex";
 
 export default {
   components: {
@@ -44,21 +42,11 @@ export default {
     GlobSVG,
     ShareSVG,
   },
-  // data() {
-  //   return {
-  //     projects: [],
-  //   };
-  // },
-  computed: {
-    ...mapGetters(["getAllProjects"]),
-  },
-  mounted() {
-    this.fetchAllProjects();
-    // console.log(Object.assign([], this.getAllProjects));
-    // console.log(this.allProjects);
-  },
-  methods: {
-    ...mapActions(["fetchAllProjects"]),
+  props: {
+    projects: {
+      type: Array,
+      default: null,
+    },
   },
 };
 </script>

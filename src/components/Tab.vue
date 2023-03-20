@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="isSelected" class="">
     <slot />
   </div>
 </template>

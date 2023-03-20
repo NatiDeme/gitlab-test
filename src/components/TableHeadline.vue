@@ -10,12 +10,12 @@
             >
           </li>
         </ul>
-        <slot />
       </div>
 
       <TableInputsBot />
     </div>
     <hr class="mx-5 lg:mx-52" />
+    <slot />
   </div>
 </template>
 

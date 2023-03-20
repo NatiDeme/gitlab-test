@@ -1,23 +1,37 @@
 import axios from "axios";
 let url =
   "https://gitlab.com/api/v4/projects?access_token=glpat-fD1Q6CFWE5FBYugWD5Jh";
+let url2 =
+  "https://gitlab.com/api/v4/projects?access_token=glpat-fD1Q6CFWE5FBYugWD5Jh&sort=asc";
 const actions = {
   async fetchAllProjects({ commit }) {
     const result = await axios.get(url);
     commit("SET_ALL_PROJECTS", result.data);
   },
+  async fetchMostRecent({ commit }) {
+    const result = await axios.get(url2);
+    commit("SET_MOST_RECENT_PROJECTS", result.data);
+  },
 };
 const state = {
   allProjects: [],
+  recentProjects: [],
+  trendingProjects: [],
 };
 const mutations = {
   SET_ALL_PROJECTS(state, value) {
     state.allProjects = value;
   },
+  SET_MOST_RECENT_PROJECTS(state, value) {
+    state.recentProjects = value;
+  },
 };
 const getters = {
   getAllProjects(state) {
     return state.allProjects;
+  },
+  getRecentProjects(state) {
+    return state.recentProjects;
   },
 };
 
