@@ -6,15 +6,18 @@
         Discover projects,groups and snippets. Share your projects with others
       </p>
     </div>
+    <TableHeadline />
     <AllProjects />
   </div>
 </template>
 
 <script>
+import TableHeadline from "./TableHeadline.vue";
 import AllProjects from "./AllProjects.vue";
 export default {
   name: "HelloWorld",
   components: {
+    TableHeadline,
     AllProjects,
   },
 };

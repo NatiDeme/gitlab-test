@@ -4,11 +4,11 @@ const actions = {
   async getText({ commit }, value) {
     // console.log(value);
     const result = await axios.get(`https://bible-api.com/${value}`);
-    commit("SET_TEXT", result.data.text);
+    commit("SET_TEXT", result.data);
   },
 };
 const state = {
-  text: "",
+  text: [],
 };
 const mutations = {
   SET_TEXT(state, value) {
